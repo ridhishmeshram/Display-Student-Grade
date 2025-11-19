@@ -1,46 +1,45 @@
-#include <stdio.h>
+    #include <stdio.h>
 
 
-int main() {
+    int main() {
     int n, i;
     float maths, physics, chemistry, english, cs;
     float total, average;
     char grade;
 
-  printf("Enter number of students: ");
+    printf("Enter number of students: ");
     scanf("%d", &n);
 
 
-  for (i = 1; i <= n; i++) {
+    for (i = 1; i <= n; i++) {
 
 
-  printf("\nEnter marks of Student %d:\n", i);
+    printf("\nEnter marks of Student %d:\n", i);
 
-
-   printf("Maths: ");
+    printf("Maths: ");
         scanf("%f", &maths);
 
 
-   printf("Physics: ");
+     printf("Physics: ");
         scanf("%f", &physics);
 
 
-   printf("Chemistry: ");
+    printf("Chemistry: ");
         scanf("%f", &chemistry);
 
 
- printf("English: ");
+    printf("English: ");
         scanf("%f", &english);
 
 
-printf("Computer Science: ");
+    printf("Computer Science: ");
         scanf("%f", &cs);
 
 
- total = maths + physics + chemistry + english + cs;
+    total = maths + physics + chemistry + english + cs;
         average = total / 5;
 
- if (average >= 90) {
+    if (average >= 90) {
             grade = 'A';
         } 
         else if (average >= 80) {
@@ -60,12 +59,12 @@ printf("Computer Science: ");
         }
 
 
-printf("\n--- Result of Student %d ---\n", i);
+    printf("\n--- Result of Student %d ---\n", i);
         printf("Total Marks : %.2f\n", total);
         printf("Average     : %.2f\n", average);
         printf("Grade       : %c\n", grade);
     }
 
 
- return 0;
-}
+    return 0;
+    }
